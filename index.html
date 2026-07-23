@@ -47,6 +47,25 @@ a:hover { text-decoration: underline; }
 .index-list li { margin: 12px 0; padding: 16px 20px; background: var(--card); border-radius: 12px; border: 1px solid var(--border); }
 .index-list a { font-size: 18px; font-weight: 500; }
 .index-rank { color: var(--muted); font-size: 14px; margin-left: 8px; }
+.league-cta-wrap { text-align: center; margin: 0 auto 36px; max-width: 600px; }
+.league-cta {
+  display: block;
+  padding: 20px 32px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(28px, 5vw, 36px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: linear-gradient(135deg, var(--green) 0%, var(--teal) 100%);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.league-cta:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 255, 135, 0.28);
+}
 footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px; }
 </style>
 </head>
@@ -61,10 +80,10 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
     <section class="section">
       <div class="section-label">Managers</div>
       <h2 class="section-heading">Pick your story</h2>
-      <p class="card-sub" style="margin-bottom:24px">
-        <a href="league_wrapped.html">View league-wide awards →</a>
-      </p>
-      <ul class="index-list"><li><a href="managers/269922-darian-diaz.html">Darian Diaz</a> <span class="index-rank">#1</span><div class="card-sub">Mbuemos Noches</div></li><li><a href="managers/6295560-trustin-varnado.html">Trustin Varnado</a> <span class="index-rank">#2</span><div class="card-sub">VARnado FC</div></li><li><a href="managers/2656170-nikhil-kanukolanu.html">Nikhil Kanukolanu</a> <span class="index-rank">#3</span><div class="card-sub">Glöck14</div></li><li><a href="managers/183983-audax-bufete.html">Audax Bufete</a> <span class="index-rank">#4</span><div class="card-sub">lil uzi wirtz</div></li><li><a href="managers/4474138-cesar-castro.html">Cesar Castro</a> <span class="index-rank">#5</span><div class="card-sub">Siete no es siempre</div></li><li><a href="managers/3345954-john-urbano.html">John Urbano</a> <span class="index-rank">#6</span><div class="card-sub">urBVB</div></li><li><a href="managers/13223-peace-iyiewuare.html">Peace Iyiewuare</a> <span class="index-rank">#7</span><div class="card-sub">Change Name</div></li><li><a href="managers/8040752-fola-baruwa.html">Fola Baruwa</a> <span class="index-rank">#8</span><div class="card-sub">Change Name</div></li><li><a href="managers/3677265-claudio-castro.html">Claudio Castro</a> <span class="index-rank">#9</span><div class="card-sub">los cafeteros</div></li><li><a href="managers/4280901-justin-flowers.html">Justin Flowers</a> <span class="index-rank">#10</span><div class="card-sub">Power..Bottoms Up!</div></li><li><a href="managers/3364017-brendan-clarke.html">Brendan Clarke</a> <span class="index-rank">#11</span><div class="card-sub">Salahl Guys</div></li><li><a href="managers/6852297-hector-mercado.html">Hector Mercado</a> <span class="index-rank">#12</span><div class="card-sub">Haaland&#x27;s Angels</div></li><li><a href="managers/4273390-victor-xie.html">Victor Xie</a> <span class="index-rank">#13</span><div class="card-sub">thiccomode</div></li><li><a href="managers/6849629-davis-renzelmann.html">Davis Renzelmann</a> <span class="index-rank">#14</span><div class="card-sub">You Wish FC</div></li><li><a href="managers/4271949-amber-friel.html">Amber Friel</a> <span class="index-rank">#15</span><div class="card-sub">Dancing Pole Cats</div></li><li><a href="managers/5960496-rj-santos.html">Rj Santos</a> <span class="index-rank">#16</span><div class="card-sub">ARGE</div></li><li><a href="managers/6868970-alexander-tejada.html">alexander tejada</a> <span class="index-rank">#17</span><div class="card-sub">Pigeon FC</div></li><li><a href="managers/3954481-warren-ogle.html">warren ogle</a> <span class="index-rank">#18</span><div class="card-sub">EPL is Just MLS u30</div></li><li><a href="managers/7709905-erik-hojnacke.html">Erik Hojnacke</a> <span class="index-rank">#19</span><div class="card-sub">second again</div></li><li><a href="managers/4352380-emerson-tejada.html">Emerson Tejada</a> <span class="index-rank">#20</span><div class="card-sub">Power Reijnders</div></li></ul>
+      <div class="league-cta-wrap">
+        <a class="league-cta" href="league_wrapped.html">League-wide awards</a>
+      </div>
+      <ul class="index-list"><li><a href="managers/269922-darian-diaz.html">Mbuemos Noches</a> <span class="index-rank">#1</span><div class="card-sub">Darian Diaz</div></li><li><a href="managers/6295560-trustin-varnado.html">VARnado FC</a> <span class="index-rank">#2</span><div class="card-sub">Trustin Varnado</div></li><li><a href="managers/2656170-nikhil-kanukolanu.html">Glöck14</a> <span class="index-rank">#3</span><div class="card-sub">Nikhil Kanukolanu</div></li><li><a href="managers/183983-audax-bufete.html">lil uzi wirtz</a> <span class="index-rank">#4</span><div class="card-sub">Audax Bufete</div></li><li><a href="managers/4474138-cesar-castro.html">Siete no es siempre</a> <span class="index-rank">#5</span><div class="card-sub">Cesar Castro</div></li><li><a href="managers/3345954-john-urbano.html">urBVB</a> <span class="index-rank">#6</span><div class="card-sub">John Urbano</div></li><li><a href="managers/13223-peace-iyiewuare.html">Change Name</a> <span class="index-rank">#7</span><div class="card-sub">Peace Iyiewuare</div></li><li><a href="managers/8040752-fola-baruwa.html">Change Name</a> <span class="index-rank">#8</span><div class="card-sub">Fola Baruwa</div></li><li><a href="managers/3677265-claudio-castro.html">los cafeteros</a> <span class="index-rank">#9</span><div class="card-sub">Claudio Castro</div></li><li><a href="managers/4280901-justin-flowers.html">Power..Bottoms Up!</a> <span class="index-rank">#10</span><div class="card-sub">Justin Flowers</div></li><li><a href="managers/3364017-brendan-clarke.html">Salahl Guys</a> <span class="index-rank">#11</span><div class="card-sub">Brendan Clarke</div></li><li><a href="managers/6852297-hector-mercado.html">Haaland&#x27;s Angels</a> <span class="index-rank">#12</span><div class="card-sub">Hector Mercado</div></li><li><a href="managers/4273390-victor-xie.html">thiccomode</a> <span class="index-rank">#13</span><div class="card-sub">Victor Xie</div></li><li><a href="managers/6849629-davis-renzelmann.html">You Wish FC</a> <span class="index-rank">#14</span><div class="card-sub">Davis Renzelmann</div></li><li><a href="managers/4271949-amber-friel.html">Dancing Pole Cats</a> <span class="index-rank">#15</span><div class="card-sub">Amber Friel</div></li><li><a href="managers/5960496-rj-santos.html">ARGE</a> <span class="index-rank">#16</span><div class="card-sub">Rj Santos</div></li><li><a href="managers/6868970-alexander-tejada.html">Pigeon FC</a> <span class="index-rank">#17</span><div class="card-sub">alexander tejada</div></li><li><a href="managers/3954481-warren-ogle.html">EPL is Just MLS u30</a> <span class="index-rank">#18</span><div class="card-sub">warren ogle</div></li><li><a href="managers/7709905-erik-hojnacke.html">second again</a> <span class="index-rank">#19</span><div class="card-sub">Erik Hojnacke</div></li><li><a href="managers/4352380-emerson-tejada.html">Power Reijnders</a> <span class="index-rank">#20</span><div class="card-sub">Emerson Tejada</div></li></ul>
     </section>
     
 <footer>FPL League Wrapped · Data from Databricks gold layer</footer>

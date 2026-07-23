@@ -47,6 +47,25 @@ a:hover { text-decoration: underline; }
 .index-list li { margin: 12px 0; padding: 16px 20px; background: var(--card); border-radius: 12px; border: 1px solid var(--border); }
 .index-list a { font-size: 18px; font-weight: 500; }
 .index-rank { color: var(--muted); font-size: 14px; margin-left: 8px; }
+.league-cta-wrap { text-align: center; margin: 0 auto 36px; max-width: 600px; }
+.league-cta {
+  display: block;
+  padding: 20px 32px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(28px, 5vw, 36px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: linear-gradient(135deg, var(--green) 0%, var(--teal) 100%);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.league-cta:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 255, 135, 0.28);
+}
 footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px; }
 </style>
 </head>
