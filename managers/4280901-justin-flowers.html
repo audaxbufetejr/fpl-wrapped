@@ -29,6 +29,7 @@ a:hover { text-decoration: underline; }
 .hero-stats { display: flex; gap: 40px; margin-top: 40px; flex-wrap: wrap; justify-content: center; }
 .hero-stat-val { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--green); line-height: 1; }
 .hero-stat-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.hero-stat-detail { font-size: 12px; color: var(--text); margin-top: 8px; line-height: 1.35; max-width: 200px; }
 .section { max-width: 900px; margin: 0 auto; padding: 56px 24px; }
 .section-label { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
 .section-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 7vw, 64px); line-height: 0.95; margin-bottom: 28px; }
@@ -42,6 +43,11 @@ a:hover { text-decoration: underline; }
 .card-value { font-family: 'Bebas Neue', sans-serif; font-size: 42px; line-height: 1; color: var(--green); }
 .card-sub { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.4; }
 .card-sub strong { color: var(--text); }
+.card-league-ref { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.chip-extremes { display: flex; flex-direction: column; gap: 18px; margin-top: 4px; }
+.chip-extreme-label { display: inline; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-right: 8px; vertical-align: baseline; }
+.chip-extreme-line { display: inline; font-size: 15px; line-height: 1.35; color: var(--text); }
+.chip-extreme-line strong { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--green); font-weight: 400; }
 .nav-bar { padding: 16px 24px; border-bottom: 1px solid var(--border); font-size: 14px; }
 .index-list { list-style: none; max-width: 600px; margin: 0 auto; }
 .index-list li { margin: 12px 0; padding: 16px 20px; background: var(--card); border-radius: 12px; border: 1px solid var(--border); }
@@ -85,6 +91,10 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
           <div class="hero-stat-val">#10</div>
           <div class="hero-stat-label">League rank</div>
         </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">#3633959</div>
+          <div class="hero-stat-label">Overall rank</div>
+        </div>
       </div>
     </header>
     
@@ -100,7 +110,7 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
     <div class="card">
       <div class="card-label">Your Best League Rank</div>
       <div class="card-value">#10</div>
-      <div class="card-sub"><strong>Season high</strong></div>
+      <div class="card-sub"><strong>GW38</strong></div>
     </div>
     <div class="card">
       <div class="card-label">Final League Rank</div>
@@ -110,12 +120,37 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
     <div class="card">
       <div class="card-label">Your Best Gameweek</div>
       <div class="card-value">95</div>
-      <div class="card-sub"><strong>GW36</strong></div>
+      <div class="card-sub"><strong>GW36</strong><div class="card-league-ref">#10 in league</div><div class="card-league-ref">League best: 126 (GW33)</div></div>
     </div>
     <div class="card">
       <div class="card-label">Your Worst Gameweek</div>
       <div class="card-value">26</div>
-      <div class="card-sub"><strong>GW20</strong></div>
+      <div class="card-sub"><strong>GW20</strong><div class="card-league-ref">#20 in league</div><div class="card-league-ref">League worst: 11 (GW2)</div></div>
+    </div></div>
+    </section>
+    <section class="section">
+      <div class="section-label">Wrapped</div>
+      <h2 class="section-heading">Chips</h2>
+      <div class="card-grid">
+    <div class="card">
+      <div class="card-label">Wildcard</div>
+      <div class="card-value">47.0 · 79.0</div>
+      <div class="card-sub"><strong>GW11 · GW37</strong><div class="card-league-ref">#21 · #4 in league</div><div class="card-league-ref">League best: 85.0 (lil uzi wirtz (GW7)) · League worst: 35.0 (urBVB (GW19))</div></div>
+    </div>
+    <div class="card">
+      <div class="card-label">Free Hit</div>
+      <div class="card-value">45.0 · 58.0</div>
+      <div class="card-sub"><strong>GW8 · GW34</strong><div class="card-league-ref">#20 · #12 in league</div><div class="card-league-ref">League best: 117.0 (Mbuemos Noches (GW33)) · League worst: 39.0 (los cafeteros (GW3))</div></div>
+    </div>
+    <div class="card">
+      <div class="card-label">Bench Boost</div>
+      <div class="card-value">79.0 · 51.0</div>
+      <div class="card-sub"><strong>GW17 · GW32</strong><div class="card-league-ref">#8 · #22 in league</div><div class="card-league-ref">League best: 126.0 (lil uzi wirtz (GW33)) · League worst: 50.0 (Salahl Guys (GW5))</div></div>
+    </div>
+    <div class="card">
+      <div class="card-label">Triple Captain</div>
+      <div class="card-value">39.0 · 3.0</div>
+      <div class="card-sub"><strong>GW16 — Haaland · GW29 — Virgil</strong><div class="card-league-ref">#5 · #28 in league</div><div class="card-league-ref">League best: 48.0 (Mbuemos Noches (GW6)) · League worst: 3.0 (Power..Bottoms Up! (GW29))</div></div>
     </div></div>
     </section>
     <section class="section">
@@ -125,12 +160,12 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
     <div class="card">
       <div class="card-label">Your Best Transfer</div>
       <div class="card-value">14</div>
-      <div class="card-sub"><strong>Muñoz for Van de Ven (GW13)</strong></div>
+      <div class="card-sub"><strong>Muñoz for Van de Ven (GW13)</strong><div class="card-league-ref">#10 in league</div><div class="card-league-ref">League best: 21</div></div>
     </div>
     <div class="card">
       <div class="card-label">Your Worst Transfer</div>
       <div class="card-value">-13</div>
-      <div class="card-sub"><strong>Walker-Peters for Senesi (GW34)</strong></div>
+      <div class="card-sub"><strong>Walker-Peters for Senesi (GW34)</strong><div class="card-league-ref">#8 in league</div><div class="card-league-ref">League worst: -18</div></div>
     </div></div>
     </section>
     <section class="section">

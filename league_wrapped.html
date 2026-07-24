@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>League Wrapped – League 45024 (2025-26)</title>
+<title>League Wrapped – Farmer&#x27;s PL (2025-26)</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -29,6 +29,7 @@ a:hover { text-decoration: underline; }
 .hero-stats { display: flex; gap: 40px; margin-top: 40px; flex-wrap: wrap; justify-content: center; }
 .hero-stat-val { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--green); line-height: 1; }
 .hero-stat-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.hero-stat-detail { font-size: 12px; color: var(--text); margin-top: 8px; line-height: 1.35; max-width: 200px; }
 .section { max-width: 900px; margin: 0 auto; padding: 56px 24px; }
 .section-label { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
 .section-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 7vw, 64px); line-height: 0.95; margin-bottom: 28px; }
@@ -42,6 +43,11 @@ a:hover { text-decoration: underline; }
 .card-value { font-family: 'Bebas Neue', sans-serif; font-size: 42px; line-height: 1; color: var(--green); }
 .card-sub { font-size: 13px; color: var(--muted); margin-top: 8px; line-height: 1.4; }
 .card-sub strong { color: var(--text); }
+.card-league-ref { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.chip-extremes { display: flex; flex-direction: column; gap: 18px; margin-top: 4px; }
+.chip-extreme-label { display: inline; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-right: 8px; vertical-align: baseline; }
+.chip-extreme-line { display: inline; font-size: 15px; line-height: 1.35; color: var(--text); }
+.chip-extreme-line strong { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--green); font-weight: 400; }
 .nav-bar { padding: 16px 24px; border-bottom: 1px solid var(--border); font-size: 14px; }
 .index-list { list-style: none; max-width: 600px; margin: 0 auto; }
 .index-list li { margin: 12px 0; padding: 16px 20px; background: var(--card); border-radius: 12px; border: 1px solid var(--border); }
@@ -75,19 +81,22 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
     <header class="hero">
       <div class="hero-eyebrow">2024/25</div>
       <h1 class="hero-title">LEAGUE<br>WRAPPED</h1>
-      <p class="hero-sub">League 45024 (2025-26)</p>
+      <p class="hero-sub">Farmer&#x27;s PL (2025-26)</p>
       <div class="hero-stats">
             <div class="hero-stat">
               <div class="hero-stat-val">126</div>
               <div class="hero-stat-label">Highest Gameweek Score</div>
+              <div class="hero-stat-detail">lil uzi wirtz (GW33)</div>
             </div>
             <div class="hero-stat">
               <div class="hero-stat-val">155</div>
               <div class="hero-stat-label">Top League Differential</div>
+              <div class="hero-stat-detail">Change Name — Gibbs-White</div>
             </div>
             <div class="hero-stat">
               <div class="hero-stat-val">21</div>
               <div class="hero-stat-label">Best Transfer</div>
+              <div class="hero-stat-detail">thiccomode — Mavropanos in for Chalobah (GW31)</div>
             </div></div>
     </header>
     
@@ -96,44 +105,52 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
       <h2 class="section-heading">Chips</h2>
       <div class="card-grid">
     <div class="card">
-      <div class="card-label">Wildcard — Best</div>
-      <div class="card-value">85.0</div>
-      <div class="card-sub"><strong>lil uzi wirtz (GW7)</strong></div>
+      <div class="card-label">Wildcard</div>
+      <div class="chip-extremes">
+    <div class="chip-extreme">
+      <div class="chip-extreme-label">Best</div>
+      <div class="chip-extreme-line"><strong>85.0</strong> - lil uzi wirtz (GW7)</div>
+    </div>
+    <div class="chip-extreme">
+      <div class="chip-extreme-label">Worst</div>
+      <div class="chip-extreme-line"><strong>35.0</strong> - urBVB (GW19)</div>
+    </div></div>
     </div>
     <div class="card">
-      <div class="card-label">Wildcard — Worst</div>
-      <div class="card-value">35.0</div>
-      <div class="card-sub"><strong>urBVB (GW19)</strong></div>
+      <div class="card-label">Free Hit</div>
+      <div class="chip-extremes">
+    <div class="chip-extreme">
+      <div class="chip-extreme-label">Best</div>
+      <div class="chip-extreme-line"><strong>117.0</strong> - Mbuemos Noches (GW33)</div>
+    </div>
+    <div class="chip-extreme">
+      <div class="chip-extreme-label">Worst</div>
+      <div class="chip-extreme-line"><strong>39.0</strong> - los cafeteros (GW3)</div>
+    </div></div>
     </div>
     <div class="card">
-      <div class="card-label">Free Hit — Best</div>
-      <div class="card-value">117.0</div>
-      <div class="card-sub"><strong>Mbuemos Noches (GW33)</strong></div>
+      <div class="card-label">Bench Boost</div>
+      <div class="chip-extremes">
+    <div class="chip-extreme">
+      <div class="chip-extreme-label">Best</div>
+      <div class="chip-extreme-line"><strong>126.0</strong> - lil uzi wirtz (GW33)</div>
+    </div>
+    <div class="chip-extreme">
+      <div class="chip-extreme-label">Worst</div>
+      <div class="chip-extreme-line"><strong>50.0</strong> - Salahl Guys (GW5)</div>
+    </div></div>
     </div>
     <div class="card">
-      <div class="card-label">Free Hit — Worst</div>
-      <div class="card-value">39.0</div>
-      <div class="card-sub"><strong>los cafeteros (GW3)</strong></div>
+      <div class="card-label">Triple Captain</div>
+      <div class="chip-extremes">
+    <div class="chip-extreme">
+      <div class="chip-extreme-label">Best</div>
+      <div class="chip-extreme-line"><strong>48.0</strong> - Mbuemos Noches (GW6)</div>
     </div>
-    <div class="card">
-      <div class="card-label">Bench Boost — Best</div>
-      <div class="card-value">126.0</div>
-      <div class="card-sub"><strong>lil uzi wirtz (GW33)</strong></div>
-    </div>
-    <div class="card">
-      <div class="card-label">Bench Boost — Worst</div>
-      <div class="card-value">50.0</div>
-      <div class="card-sub"><strong>Salahl Guys (GW5)</strong></div>
-    </div>
-    <div class="card">
-      <div class="card-label">Triple Captain — Best</div>
-      <div class="card-value">48.0</div>
-      <div class="card-sub"><strong>Mbuemos Noches (GW6)</strong></div>
-    </div>
-    <div class="card">
-      <div class="card-label">Triple Captain — Worst</div>
-      <div class="card-value">3.0</div>
-      <div class="card-sub"><strong>Power..Bottoms Up! (GW29)</strong></div>
+    <div class="chip-extreme">
+      <div class="chip-extreme-label">Worst</div>
+      <div class="chip-extreme-line"><strong>3.0</strong> - Power..Bottoms Up! (GW29)</div>
+    </div></div>
     </div></div>
     </section>
     <section class="section">
@@ -158,7 +175,7 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
     <div class="card">
       <div class="card-label">Highest Gameweek Score</div>
       <div class="card-value">126</div>
-      <div class="card-sub"><strong>GW33</strong></div>
+      <div class="card-sub"><strong>lil uzi wirtz (GW33)</strong></div>
     </div>
     <div class="card">
       <div class="card-label">Lowest Gameweek Score</div>
@@ -213,7 +230,7 @@ footer { text-align: center; padding: 40px; color: var(--muted); font-size: 12px
     <div class="card">
       <div class="card-label">Top League Differential</div>
       <div class="card-value">155</div>
-      <div class="card-sub"><strong>Gibbs-White — 155 pts (&lt;10% owned)</strong></div>
+      <div class="card-sub"><strong>Change Name — Gibbs-White</strong></div>
     </div>
     <div class="card">
       <div class="card-label">Most Points Left on Bench</div>
